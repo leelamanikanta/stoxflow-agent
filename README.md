@@ -269,4 +269,4 @@ Reports saved under `reports/research_{TICKER}.json` use the following schema:
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
