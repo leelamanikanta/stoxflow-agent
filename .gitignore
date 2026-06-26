@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment secrets
+.env
+
+# Python caching & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Application Logs
+logs/*.log
+
+# Generated Reports (ignore JSON outputs, keep directory structure)
+reports/*.json
+
+# OS files
+.DS_Store
+Thumbs.db

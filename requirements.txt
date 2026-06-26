@@ -1,0 +1,16 @@
+ollama
+pydantic
+feedparser
+requests
+beautifulsoup4
+google-genai
+pandas
+litellm
+langgraph
+fastapi
+uvicorn
+streamlit
+arize-phoenix
+openinference-instrumentation-langchain
+openinference-instrumentation-litellm
+nicegui
