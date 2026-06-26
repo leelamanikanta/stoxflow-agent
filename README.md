@@ -86,6 +86,23 @@ StoxFlow retrieves data, fundamentals, and candle series from the **Upstox API**
 
 ---
 
+## Local LLM Setup (Ollama)
+
+StoxFlow uses a hybrid LLM architecture to optimize token usage, response latencies, and API costs:
+* **Local LLM (Ollama)**: Handles high-frequency tasks like company ticker resolution and news article sentiment digestion. Processing large raw inputs (such as scraped news articles) locally avoids cloud API overhead and limits cloud token consumption.
+* **Cloud LLM (Gemini)**: Handles the final report synthesis. Preprocessed, token-optimized data summaries are sent to the cloud model in a single prompt for reasoning and synthesis.
+
+### Setup Instructions:
+
+1. **Download Ollama**: Download and install Ollama from [ollama.com](https://ollama.com).
+2. **Pull the Model**: Run the following command to download the default local model:
+   ```bash
+   ollama pull qwen2.5:3b
+   ```
+3. **Verify Server**: Ensure Ollama is running in the background (typically active at `http://localhost:11434`).
+
+---
+
 ## Environment Configuration
 
 Configure credentials in a `.env` file at the root of the project:
